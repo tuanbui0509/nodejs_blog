@@ -1,12 +1,12 @@
-class NewController{
+class NewController {
     //Get /news
-    index(req,res){
+    index(req, res) {
         res.render('news');
     }
     // get news/:slug
-    show(req,res){
-        res.send('NEWS DETAILS')
+    show(req, res) {
+        res.send('NEWS DETAILS');
     }
 }
 // dung de xuat no ra
-module.exports = new NewController;
+module.exports = new NewController();

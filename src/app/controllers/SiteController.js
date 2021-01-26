@@ -1,12 +1,12 @@
-class NewController{
+class NewController {
     //Get /
-    index(req,res){
+    index(req, res) {
         res.render('home');
     }
     // get /search
-    search(req,res){
-        res.render('search')
+    search(req, res) {
+        res.render('search');
     }
 }
 // dung de xuat no ra
-module.exports = new NewController;
+module.exports = new NewController();
