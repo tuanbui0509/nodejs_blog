@@ -6,9 +6,13 @@ const app = express();
 const port = 3000;
 // tao bien route
 const route = require('./routes');
-
+//set up mongo db
+const db = require('./config/bd');
 // setup image
 app.use(express.static(path.join(__dirname, 'public')));
+
+//db connect
+db.connect();
 
 // HTTP logger
 // app.use(morgan('combined'));
