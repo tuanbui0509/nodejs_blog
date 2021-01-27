@@ -22,7 +22,7 @@ app.use(morgan('combined'));
 // Template engine
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
-app.set('views', path.join(__dirname, 'resources/views'));
+app.set('views', path.join(__dirname, 'resources', 'views'));
 // console.log(path.join(__dirname, "resources/views "));
 // use to middleware form data to server
 app.use(
@@ -38,5 +38,5 @@ route(app);
 // 127.0.0.1 - localhost
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`App listening at http://localhost:${port}`);
 });
