@@ -8,5 +8,5 @@ class NewController {
         res.send('NEWS DETAILS');
     }
 }
-// dung de xuat no ra
+// exports new variable controller
 module.exports = new NewController();
